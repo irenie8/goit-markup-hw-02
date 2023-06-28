@@ -218,7 +218,7 @@ body {
 
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
-  background-color: var(--primary-brand-color);
+  background-color: var(--presed-state-color);
   color: var(--primary-white-color);
 }
 
