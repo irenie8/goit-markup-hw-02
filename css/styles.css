@@ -50,8 +50,6 @@ body {
   color: var(--dark-text-color);
 }
 
-.header-address-link:hover,
-.header-address-link:focus,
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
@@ -74,6 +72,12 @@ body {
 
 .header-address-link {
   color: var(--primary-text-color);
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--presed-state-color);
+  text-decoration: underline;
 }
 
 /*----- MAIN SECTION -----*/
