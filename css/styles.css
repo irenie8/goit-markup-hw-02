@@ -50,12 +50,8 @@ body {
   color: var(--dark-text-color);
 }
 
-.header-mail-link:hover,
-.header-mail-link:focus,
-.header-mail-link:active,
-.header-phone-link:hover,
-.header-phone-link:focus,
-.header-phone-link:active,
+.header-address-link:hover,
+.header-address-link:focus,
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
@@ -218,7 +214,7 @@ body {
 
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
-  background: var(--primary-brand-color);
+  background-color: var(--primary-brand-color);
   color: var(--primary-white-color);
 }
 
