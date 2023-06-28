@@ -4,19 +4,6 @@ body {
   background-color: #fff;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 :root {
   --primary-brand-color: #4d5ae5;
   --presed-state-color: #404bbf;
@@ -33,29 +20,30 @@ body {
 }
 
 .list {
-  list-style-type: none;
+  list-style: none;
 }
 
 /*----- HEADER -----*/
 
 .header-logo {
-  color: var(--dark-text-color);
+  color: var(--primary-brand-color);
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .header-logo-accent {
-  color: var(--primary-brand-color);
+  color: var(--dark-text-color);
 }
 
 .header-menu-item {
   color: var(--dark-text-color);
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .header-menu-link {
@@ -75,17 +63,20 @@ body {
   text-decoration: underline;
 }
 
+.header-contacts {
+  font-style: normal;
+}
+
 .header-contacts-mail,
 .header-contacts-phone {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   font-style: normal;
 }
 
-.header-mail-link,
-.header-phone-link {
+.header-address-link {
   color: var(--primary-text-color);
 }
 
@@ -101,10 +92,7 @@ body {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: -0.02em;
-  display: flex;
-  width: 496px;
-  flex-direction: column;
+  letter-spacing: 0.02em;
   flex-shrink: 0;
 }
 
@@ -115,9 +103,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
   background: var(--primary-brand-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -133,13 +119,13 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 .advantages-item-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 /*----- PRODUCTS -----*/
@@ -149,8 +135,9 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
 }
 
 /*----- TEAM -----*/
@@ -163,8 +150,9 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .team-list-item {
@@ -176,14 +164,14 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 .team-list-position {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 /*----- FOOTER -----*/
@@ -193,47 +181,44 @@ body {
 }
 
 .footer-logo {
-  color: var(--light-mode-color);
+  color: var(--primary-brand-color);
   font-size: 18px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .footer-logo-accent {
-  color: var(--primary-brand-color);
+  color: var(--light-mode-color);
 }
 
 .footer-text {
   color: var(--light-mode-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 /*----- PORTFOLIO FILTERS -----*/
 
 .portfolio-filter-btn {
-  border-radius: 4px;
   border: 1px solid var(--accent-color);
   background: var(--light-mode-color);
   cursor: pointer;
   color: var(--primary-brand-color);
   text-align: center;
   font-size: 16px;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
 }
 
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
   background: var(--primary-brand-color);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: var(--primary-white-color);
 }
 
@@ -249,12 +234,12 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-project-type {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
